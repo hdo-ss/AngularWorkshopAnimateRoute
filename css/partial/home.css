@@ -1,0 +1,68 @@
+/*-------------------*\
+  #Style
+\*-------------------*/
+
+body {
+  background-color: #323232;
+  color: #fff;
+}
+
+#Home {
+  text-align: center;
+}
+
+#Home .People {
+  list-style: none;
+}
+#Home .People__Links a {
+  color: #fff;
+}
+
+
+/*-------------------*\
+  #Angular Animation
+\*-------------------*/
+
+#Home.ng-enter {
+  -webkit-animation: slideInRight 0.5s both ease-in;
+  animation: slideInRight 0.5s both ease-in;
+}
+#Home.ng-leave {
+  -webkit-animation: slideOutLeft 0.5s both ease-in;
+  animation: slideOutLeft 0.5s both ease-in;
+}
+
+
+/*---------------*\
+  #Keyframes
+\*---------------*/
+
+@-webkit-keyframes slideInRight {
+	from {
+    -webkit-transform: translateX(100%);
+  }
+	to {
+    -webkit-transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+	from {
+    transform: translateX(100%);
+  }
+	to {
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes slideOutLeft {
+	to {
+    -webkit-transform: translateX(-100%);
+  }
+}
+
+@keyframes slideOutLeft {
+	to {
+    transform: translateX(-100%);
+  }
+}

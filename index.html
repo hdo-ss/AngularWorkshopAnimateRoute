@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <script type="text/javascript" src="/js/lib/angular.js"></script>
+    <script type="text/javascript" src="/js/lib/angular-route.js"></script>
+    <script type="text/javascript" src="/js/lib/angular-animate.js"></script>
+
+    <script type="text/javascript" src="/js/app.js"></script>
+
+    <script type="text/javascript" src="/js/controller/home.js"></script>
+    <script type="text/javascript" src="/js/controller/hanam/hanam.js"></script>
+    <script type="text/javascript" src="/js/controller/hanam/hanam_about.js"></script>
+
+    <link href="/css/index.css" type="text/css" rel="stylesheet" />
+    <link href="/css/partial/home.css" type="text/css" rel="stylesheet" />
+    <link href="/css/partial/hanam/hanam.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body ng-app="AngularWorkshopApp">
+    <div id="{{ id }}" class="Page" ng-view ></div>
+    <a href="#/" class="HomeLink">Home</a>
+  </body>
+</html>

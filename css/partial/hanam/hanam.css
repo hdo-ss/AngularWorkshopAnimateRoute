@@ -1,0 +1,105 @@
+/*-------------------*\
+  #Style
+\*-------------------*/
+
+body {
+  background-color: #323232;
+  color: #fff;
+}
+
+#Hanam {
+  background-color: #300;
+  text-align: center;
+}
+
+#Hanam .Navigation {
+  list-style: none;
+}
+#Hanam .Navigation__Items a {
+  color: #fff;
+}
+
+#Hanam .Navigation__Items.ng-enter {
+  -webkit-animation: scaleUp 1s both ease-in;
+  animation: scaleUp 1s both ease-in;
+}
+
+#Hanam .Navigation__Items.ng-leave {
+  -webkit-animation: rotateFall 1s both ease-in;
+  animation: rotateFall 1s both ease-in;
+  -webkit-transform-origin: 0% 0%;
+  transform-origin: 0% 0%;
+}
+
+
+/*-------------------*\
+  #Angular Animation
+\*-------------------*/
+
+#Hanam.ng-enter {
+  -webkit-animation: scaleUp 0.5s both ease-in;
+  animation: scaleUp 0.5s both ease-in;
+}
+#Hanam.ng-leave {
+  -webkit-animation: rotateFall 1s both ease-in;
+  animation: rotateFall 1s both ease-in;
+  -webkit-transform-origin: 0% 0%;
+  transform-origin: 0% 0%;
+}
+
+
+/*---------------*\
+  #Keyframes
+\*---------------*/
+
+@-webkit-keyframes scaleUp {
+	from {
+    opacity: 0.3;
+    -webkit-transform: scale(0.8);
+  }
+}
+
+@keyframes scaleUp {
+	from {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+}
+
+@-webkit-keyframes rotateFall {
+	0% {
+    -webkit-transform: rotateZ(0deg);
+  }
+	20% {
+    -webkit-transform: rotateZ(10deg);
+    -webkit-animation-timing-function: ease-out;
+  }
+  40% {
+    -webkit-transform: rotateZ(17deg);
+  }
+  60% {
+    -webkit-transform: rotateZ(16deg);
+  }
+  100% {
+    -webkit-transform: translateY(100%) rotateZ(17deg);
+  }
+}
+
+@keyframes rotateFall {
+	0% {
+    transform: rotateZ(0deg);
+  }
+	20% {
+    transform: rotateZ(10deg);
+    animation-timing-function: ease-out;
+  }
+	40% {
+    transform: rotateZ(17deg);
+  }
+	60% {
+    transform: rotateZ(16deg);
+  }
+	100% {
+    transform: translateY(100%) rotateZ(17deg);
+  }
+}

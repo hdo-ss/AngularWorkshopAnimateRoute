@@ -1,0 +1,32 @@
+/*-------------------*\
+  #Page Default Styles
+\*-------------------*/
+
+html, body {
+  font-family: Helvetica, Arial, sans-serif;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.Page {
+	bottom: 0;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	width: 100%;
+}
+
+.HomeLink {
+  color: #fff;
+  font-size: 1.2rem;
+  left: 5px;
+  position: absolute;
+  top: 5px;
+}
+
+/*-------------------*\
+  #Angular Animations
+\*-------------------*/
+	.ng-enter { z-index: 8888; }
+	.ng-leave { z-index: 9999; }
