@@ -4,10 +4,8 @@ Welcome to the second Angular workshop! Missed the first one?  Check it out [her
 
 ## Description
 For your workshop, you will use the following features of angular:
-- ngRoute
-- ngAnimate
-
-Each of these can be found via the AngularJS documentation
+- (ngRoute)[https://docs.angularjs.org/api/ngRoute]
+- (ngAnimate)[https://docs.angularjs.org/api/ngAnimate]
 
 ## Deliverables
 Each developer will create:
